@@ -9,6 +9,7 @@ public class Snake : MonoBehaviour
     float screenWidth = 0;
     float screenHeight = 0;
 
+    bool isEaten = false;
     int headRot = 0;
     // Start is called before the first frame update
     void Start()
@@ -72,9 +73,14 @@ public class Snake : MonoBehaviour
             MoveBody();
         }
     }
+    public void Eat()
+    {
+        isEaten = true;
+    }
     void MoveBody()
     {
-
+        if (!isEaten)
+        {
             Body[] bb = GetComponentsInChildren<Body>();
 
             Tail t = GetComponentInChildren<Tail>();
@@ -82,6 +88,11 @@ public class Snake : MonoBehaviour
             t.transform.position = bb[0].transform.position;
 
             Destroy(bb[0].gameObject);
+        }
+        else
+        {
+            isEaten = false;
+        }
 
     }
 

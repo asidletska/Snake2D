@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class Head : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Snake snake;
+    void OnTriggerEnter2D(Collider2D other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if(other.tag == "Food")
+        {
+            //Snake.Eat();
+        }
+        else
+        {
+            Debug.Log("Fail");
+        }
     }
 }

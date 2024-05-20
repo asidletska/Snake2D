@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: fb0f8c9f91531a445a816516ca63173b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - prefabBody: {fileID: 2606590421385900277, guid: ff87e57f9977ece40ae32d306a8a2f75, type: 3}
+  - rotPrefab1: {fileID: 6440641701774251311, guid: d40d503ec53fd034491bda0db5702850, type: 3}
+  - rotPrefab2: {fileID: 8955731967383017505, guid: e16f3ab79797368428c1a49ccb86e1b4, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

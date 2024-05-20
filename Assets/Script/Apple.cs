@@ -7,7 +7,7 @@ public class Apple : MonoBehaviour
     int width = 0;
 
     int sizeHeight = 5;
-
+    float speed = 1;
     void Start()
     {
         height = (int)(sizeHeight / 0.6f) - 1;
@@ -19,14 +19,14 @@ public class Apple : MonoBehaviour
  
     void Update()
     {
-        if (timer < 0) 
+        if (timer * speed < 0) 
         {
             if(GetComponentInChildren<FoodScript>() != null)
             {
                 Destroy(GetComponentInChildren<FoodScript>().gameObject);
             }
             GenerateFruite();
-            timer = 0.2f;
+            timer = width + height;
         }
         timer -=Time.deltaTime;
     }

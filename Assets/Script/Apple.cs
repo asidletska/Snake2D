@@ -21,13 +21,19 @@ public class Apple : MonoBehaviour
     {
         if (timer < 0) 
         {
+            if(GetComponentInChildren<FoodScript>() != null)
+            {
+                Destroy(GetComponentInChildren<FoodScript>().gameObject);
+            }
             GenerateFruite();
-            timer = height * width;
+            timer = 0.2f;
         }
         timer -=Time.deltaTime;
     }
     void GenerateFruite()
     {
-
+        int x = Random.Range(0, width);
+        int y = Random.Range(0, height);
+        Instantiate(food, new Vector3 (x, y, 10), Quaternion.identity, transform);
     }
 }

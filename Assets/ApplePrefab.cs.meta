@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: 8715f8e2f68897c40adc5f5c8ec5560b
+guid: d405426935e18484f9a3d770a2188e7a
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - food: {fileID: 5927846047568475059, guid: f6a0d29402761334cac5c644dda831b3, type: 3}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

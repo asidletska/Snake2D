@@ -6,12 +6,12 @@ public class Apple : MonoBehaviour
     int height = 0;
     int width = 0;
 
-    int sizeHeight = 5;
+    int sizeHeight = 15;
     float speed = 1;
     void Start()
     {
-        height = (int)(sizeHeight / 0.6f) - 1;
-        width = (int)((Screen.width / (Screen.height / sizeHeight) - 0.3f) / 0.6f) - 1;
+        height = (int)(sizeHeight / 1.2f) - 1;
+        width = (int)((Screen.width / (Screen.height / sizeHeight) - 0.6f) / 0.6f) - 1;
 
     }
 

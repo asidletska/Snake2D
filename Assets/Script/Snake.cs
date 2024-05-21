@@ -14,8 +14,8 @@ public class Snake : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        screenHeight = 5;
-        screenWidth = Screen.width / (Screen.height / 30) - 0.6f;
+        screenHeight = 15;
+        screenWidth = Screen.width / (Screen.height / 30) - 1.2f;
         Move();
     }
 
@@ -33,42 +33,42 @@ public class Snake : MonoBehaviour
     public void Move()
     {
         Head h = GetComponentInChildren<Head>();
-        if (headRot == 0 && h.transform.position.x + 0.6f < screenWidth)
+        if (headRot == 0 && h.transform.position.x + 1.2f < screenWidth)
         {            
             Instantiate(prefabBody, h.transform.position, Quaternion.Euler(0, 0, headRot), transform);
 
-            h.transform.position = new Vector3(h.transform.position.x + 0.6f,
+            h.transform.position = new Vector3(h.transform.position.x + 1.2f,
                                                h.transform.position.y,
                                                h.transform.position.z);
             MoveBody();
         }
 
-        if (headRot == 90 && h.transform.position.y + 0.6f < screenHeight)
+        if (headRot == 90 && h.transform.position.y + 1.2f < screenHeight)
         {
             Instantiate(prefabBody, h.transform.position, Quaternion.Euler(0, 0, headRot), transform);
 
             h.transform.position = new Vector3(h.transform.position.x,
-                                               h.transform.position.y + 0.6f,
+                                               h.transform.position.y + 1.2f,
                                                h.transform.position.z);
             MoveBody();
         }
 
-        if (headRot == 180 && h.transform.position.x - 0.6f <  screenHeight)
+        if (headRot == 180 && h.transform.position.x - 1.2f <  screenHeight)
         {
             Instantiate(prefabBody, h.transform.position, Quaternion.Euler(0, 0, headRot), transform);
 
-            h.transform.position = new Vector3(h.transform.position.x - 0.6f,
+            h.transform.position = new Vector3(h.transform.position.x - 1.2f,
                                                h.transform.position.y,
                                                h.transform.position.z);
             MoveBody();
         }
 
-        if (headRot == 270 && h.transform.position.y - 0.6f <  screenHeight)
+        if (headRot == 270 && h.transform.position.y - 1.2f <  screenHeight)
         {
             Instantiate(prefabBody, h.transform.position, Quaternion.Euler(0, 0, headRot), transform);
 
             h.transform.position = new Vector3(h.transform.position.x,
-                                               h.transform.position.y - 0.6f,
+                                               h.transform.position.y - 1.2f,
                                                h.transform.position.z);
             MoveBody();
         }
@@ -116,7 +116,7 @@ public class Snake : MonoBehaviour
             headRot = 90;
 
             h.transform.position = new Vector3(h.transform.position.x,
-                                   h.transform.position.y + 0.6f,
+                                   h.transform.position.y + 1.2f,
                                    h.transform.position.z);
             MoveBody();
         }
@@ -141,7 +141,7 @@ public class Snake : MonoBehaviour
             headRot = 270;
 
             h.transform.position = new Vector3(h.transform.position.x,
-                                   h.transform.position.y - 0.6f,
+                                   h.transform.position.y - 1.2f,
                                    h.transform.position.z);
             MoveBody();
         }
@@ -165,7 +165,7 @@ public class Snake : MonoBehaviour
             }
             headRot = 180;
 
-            h.transform.position = new Vector3(h.transform.position.x - 0.6f,
+            h.transform.position = new Vector3(h.transform.position.x - 1.2f,
                                    h.transform.position.y,
                                    h.transform.position.z);
             MoveBody();
@@ -190,7 +190,7 @@ public class Snake : MonoBehaviour
             }
             headRot = 0;
 
-            h.transform.position = new Vector3(h.transform.position.x + 0.6f,
+            h.transform.position = new Vector3(h.transform.position.x + 1.2f,
                                    h.transform.position.y,
                                    h.transform.position.z);
             MoveBody();

@@ -36,8 +36,8 @@ public class SnakeMove : MonoBehaviour
         if (score > bestscore) 
         {           
             bestscore = score;
-            scoreText.text = "SCORE: "+ "0" + score.ToString();
-            bestScore.text = "BEST SCORE: 0" + bestscore.ToString();
+            scoreText.text = "SCORE: " + score.ToString();
+            bestScore.text = "BEST SCORE: " + bestscore.ToString();
         }
     }
 

@@ -8,10 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MenuSnake.unity
     guid: e4bd8a55f293e774c97edf99224cf176
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MenuSnake 1.unity
     guid: d615036c3f93757439030331447833e2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1

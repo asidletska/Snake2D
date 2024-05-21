@@ -30,6 +30,10 @@ public class Apple : MonoBehaviour
         }
         timer -=Time.deltaTime;
     }
+    public void NewApple()
+    {
+        timer = -1;
+    }
     void GenerateFruite()
     {
         int x = Random.Range(0, width);

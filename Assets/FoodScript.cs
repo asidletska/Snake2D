@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class FoodScript : MonoBehaviour
 {
+    public Apple apple;
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Eat");
+        Destroy(gameObject);
+        GetComponentInParent<Apple>().NewApple();
     }
 }

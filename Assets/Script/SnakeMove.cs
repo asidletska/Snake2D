@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class SnakeMove : MonoBehaviour
 {
-
+    public GameObject GameOver;
     private Vector2 _direction = Vector2.right;
     private List<Transform> _segments = new List<Transform>();
     public Transform segmentPrefab;
-    public int initialSize = 4;
+    public int initialSize = 1;
     public UnityEvent OnEat;
     [SerializeField] Text scoreText;
     private int score = 0;
@@ -18,7 +18,7 @@ public class SnakeMove : MonoBehaviour
 
     private void Start()
     {
-        ResetState();
+       ResetState();
 
         if (PlayerPrefs.HasKey("snakeScore"))
         {
@@ -36,8 +36,8 @@ public class SnakeMove : MonoBehaviour
         if (score > bestscore) 
         {           
             bestscore = score;
-            scoreText.text = "SCORE: " + score.ToString();
-            bestScore.text = "BEST SCORE: " + bestscore.ToString();
+            scoreText.text = "SCORE: "+ "0" + score.ToString();
+            bestScore.text = "BEST SCORE: 0" + bestscore.ToString();
         }
     }
 
@@ -119,8 +119,12 @@ public class SnakeMove : MonoBehaviour
         }
         else if (other.tag == "Obstacles")
         {
-            ResetState();
-
+            ResetState(); 
+            Time.timeScale = 0;
+            GameOver.SetActive(true);
+            
+            
         }
     }
+
 }

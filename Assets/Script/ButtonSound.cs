@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class sound : MonoBehaviour
+public class ButtonSound : MonoBehaviour
 {
     public AudioSource myFx;
     public AudioClip clickFx;

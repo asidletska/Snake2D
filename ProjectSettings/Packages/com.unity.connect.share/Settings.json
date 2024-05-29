@@ -4,7 +4,7 @@
             {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "buildOutputDirList",
-                "value": "{\"m_Value\":\"C:/Users/user/Documents/Snake2D/BuildSnake2D;C:/Users/user/Documents/Snake2D/Snake2DBuild;;;;;;;;\"}"
+                "value": "{\"m_Value\":\"C:/Users/user/Documents/Snake2D/BuildSnake2D/BuildWEB;C:/Users/user/Documents/Snake2D/BuildSnake2D;C:/Users/user/Documents/Snake2D/Snake2DBuild;;;;;;;\"}"
             }
         ]
     }
